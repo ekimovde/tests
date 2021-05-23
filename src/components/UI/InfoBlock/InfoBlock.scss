@@ -1,0 +1,25 @@
+@import "assets/styles/variables.scss";
+
+.info-block {
+  @extend %flex-center-center;
+  border: 2px solid $grey;
+  border-radius: 5px;
+  width: 40px;
+  height: 40px;
+
+  &_danger {
+    border-color: $red;
+  }
+
+  &_warning {
+    border-color: $yellow;
+  }
+
+  &_success {
+    border-color: $green;
+  }
+
+  &__number {
+    color: $black;
+  }
+}

@@ -1,0 +1,16 @@
+@import "assets/styles/variables.scss";
+
+.input {
+  width: 100%;
+  padding: 12px 15px;
+  color: $black;
+  border-radius: 5px;
+  border: 1px solid $grey;
+  background: transparent;
+
+  &:focus {
+    background: $blue-light;
+    border-color: $blue;
+    transition: all 0.3s ease-in-out;
+  }
+}

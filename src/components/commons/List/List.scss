@@ -1,0 +1,13 @@
+@import "assets/styles/variables.scss";
+
+.list {
+  &__loader {
+    @extend %flex-center-between;
+  }
+
+  &__icon {
+    color: $blue;
+    font-size: 50px;
+    margin: 0 auto;
+  }
+}

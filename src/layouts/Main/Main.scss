@@ -1,0 +1,46 @@
+@import "assets/styles/variables.scss";
+
+.main {
+  &__wrapper {
+    margin-top: 40px !important;
+    margin-bottom: 40px !important;
+  }
+
+  &__navigation {
+    margin-top: 15px;
+    @extend %flex-center;
+  }
+
+  &__link {
+    margin-right: 10px;
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: "/";
+      right: -7px;
+      top: -2px;
+    }
+
+    &:last-child {
+      margin-right: 0;
+
+      &::after {
+        content: "";
+      }
+    }
+  }
+
+  &__text {
+    cursor: initial;
+
+    &_active {
+      color: $blue;
+      cursor: pointer;
+    }
+  }
+
+  &__offer {
+    margin-top: 40px;
+  }
+}

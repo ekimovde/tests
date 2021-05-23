@@ -1,0 +1,29 @@
+@import "assets/styles/variables.scss";
+
+.list-item {
+  background: $white;
+  border-bottom: 1px solid $grey;
+  padding: 15px 20px;
+  @extend %flex-center-between;
+
+  &__info {
+    @extend %flex-center;
+  }
+
+  &__block {
+    margin-right: 10px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__btn {
+    cursor: pointer;
+  }
+
+  &__icon {
+    font-size: 22px;
+    color: $black;
+  }
+}
